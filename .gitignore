@@ -1,0 +1,29 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Editor Files
+*.swp
+*.user
+*.orig
+.DS_Store
+
+# Build directories
+build*
+
+# Engine Directory
+engine*
+
+# YCM stuff
+.ycm_extra_conf.py
+.ycm_extra_conf.pyc
