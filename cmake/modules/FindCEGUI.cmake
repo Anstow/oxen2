@@ -53,6 +53,8 @@ ENDMACRO()
 SET( CEGUI_INCLUDE_SEARCH_DIR
    ${CEGUIDIR}/include
    ${CEGUIDIR}/cegui/include
+   ${CEGUIDIR}/include/cegui-0
+   ${CEGUIDIR}/cegui/include/cegui-0
    ~/Library/Frameworks
    /Library/Frameworks
    /usr/include
