@@ -86,7 +86,7 @@ IF("${CEGUI_FIND_COMPONENTS}" STREQUAL "")
       MESSAGE("${LOOP_S}")
    ENDFOREACH()
    MESSAGE("\n")
-   MESSAGE(SEND_ERROR "Select at last one renderer!" )
+   MESSAGE(SEND_ERROR "Select at least one renderer!" )
 ENDIF()
 
 FOREACH(COMPONENT ${CEGUI_FIND_COMPONENTS})

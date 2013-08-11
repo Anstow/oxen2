@@ -2,6 +2,7 @@
 #include "Object.hpp"
 
 #include <algorithm>
+#include <stdexcept>
 
 namespace gameSystem {
 
