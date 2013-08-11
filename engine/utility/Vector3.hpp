@@ -1,23 +1,19 @@
 #ifndef OXENGINE_VECTOR3_HPP
 #define OXENGINE_VECTOR3_HPP
 
+#include <cstdint>
+
 namespace oxEngine {
 
 template <typename T>
 struct Vector3 {
     T x, y, z;
 
-    template <typename S>
-    auto dot(const Vector3<S>& rhs) const
-        -> decltype(x * rhs.x + y * rhs.y + z * rhs.z)
-    {
+    T dot(const Vector3& rhs) const {
         return x * rhs.x + y * rhs.y + z * rhs.z;
     }
 
-    template <typename S>
-    auto cross(const Vector3<S>& rhs) const
-        -> Vector3<decltype(y * rhs.z - z * rhs.y)>
-    {
+    T cross(const Vector3& rhs) const {
         return {
             y * rhs.z - z * rhs.y,
             z * rhs.x - x * rhs.z,
@@ -199,6 +195,7 @@ inline auto operator/(const S& lhs, const Vector3<T>& rhs)
 using Vector3i = Vector3<int>;
 using Vector3f = Vector3<float>;
 using Vector3d = Vector3<double>;
+using Vector3i64 = Vector3<std::int64_t>;
 
 } // namespace oxEngine
 

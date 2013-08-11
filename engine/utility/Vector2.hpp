@@ -1,16 +1,15 @@
 #ifndef OXENGINE_VECTOR2_HPP
 #define OXENGINE_VECTOR2_HPP
 
+#include <cstdint>
+
 namespace oxEngine {
 
 template <typename T>
 struct Vector2 {
     T x, y;
 
-    template <typename S>
-    auto dot(const Vector2<S>& rhs) const
-        -> decltype(x * rhs.x + y * rhs.y)
-    {
+    T dot(const Vector2& rhs) const {
         return x * rhs.x + y * rhs.y;
     }
 
